@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+     rel="stylesheet"
+     
+/>
+<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.png" />
+  </head>
+  <body>
+    <script type="text/javascript"></script>
+  </body>
+</html>html
+
+
+
+
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
+<header class="sticky-bg">
+  <nav>
+    <div class="nav-links">
+      <i class="fa fa-bars" onclick="toggleMenu()"></i>
+      <a href="#hero-section" class="hero-link">
+        <span class="name">Krish Prajapati</span> 
+        <span class="sub-title"> std::cout<<"Computer Engineer"; </span>
+      </a>
+
+      <div id="nav-links-sub">
+        <ul>
+          <li><a href="#about-us">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<section id="hero-section">
+  <!-- Typing Effect Section -->
+  <div class="hero-title">
+    <div class="hero-sub-container">
+      <span id="typing-text">Hi! I'm Krish Prajapati</span>
+      <span id="cursor"></span>
+    </div>
+  </div>
+
+</section>
+
+<section id="connect">
+  <div class="connect-container">
+  
+    <div class="connect-icons">
+      <a href="mailto:krishpraj6@gmail.com" target="_blank" class="connect-icon">
+        <img src="assets/images/gmail.jpg" alt="Email Icon" />
+        <p>Email</p>
+      </a>
+      <a href="https://github.com/krishpraj" target="_blank" class="connect-icon">
+        <img src="assets/images/github.png" alt="GitHub Icon" />
+        <p>GitHub</p>
+      </a>
+      <a href="https://www.linkedin.com/in/krish-prajapati6" target="_blank" class="connect-icon">
+        <img src="assets/images/linkedin.jpg" alt="LinkedIn Icon" />
+        <p>LinkedIn</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const typingText = document.getElementById("typing-text");
+    const cursor = document.getElementById("cursor");
+  
+    // Scroll event listener for text adjustment
+    document.addEventListener("scroll", () => {
+      const scrollPosition = window.scrollY;
+  
+      const maxWidth = 18 * 25; 
+      let currentWidth = Math.max(0, maxWidth - (scrollPosition * 1));
+  
+      typingText.style.width = `${currentWidth}px`;
+  
+      const cursor = document.getElementById("cursor");
+  
+    // Move the cursor back as you scroll
+    cursor.style.transform = `translateX(${scrollPosition * -0.001}px)`;
+    });
+  });
+  
+  
+    window.addEventListener("scroll", reveal);
+  
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+    
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+    
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+    </script>
+  
+
+
+
+
+
+  <section id="resume-buttons">
+    <div class="resume-buttons-container">
+      <a 
+        href="assets/resume.pdf" 
+        target="_blank" 
+        class="resume-button">
+        View Full Resume
+        <span class="arrow">&gt;</span>
+      </a>
+      <a 
+        href="assets/resume.pdf" 
+        download 
+        class="resume-button">
+        Download Resume
+        <span class="arrow">&gt;</span>
+      </a>
+    </div>
+  </section>
+
+
+
+
+  <!-- About Us  -->
+  <section id="about-us">
+
+
+
+      </a>
+    </div>
+  </div>
+    <div class="about-us-container">
+      <div class="about-us-row">
+        <!-- About Me Panel -->
+        <div class="about-us-col interactive-panel">
+          <div class="panel-icon">
+            <i class="fa fa-user"></i>
+          </div>
+          <h3>About Me</h3>
+          <p class="panel-content">
+            I'm a Computer Engineer at the University of Waterloo, passionate about technology, innovation, and cars. These days, I'm writing a lot of C++, starting to play around with microcontrollers, and trying to learn as much as I can.
+          </p>
+        </div>
+  
+        <!-- My Lore Panel -->
+        <div class="about-us-col interactive-panel">
+          <div class="panel-icon">
+            <i class="fa fa-history"></i> 
+          </div>
+          <h3>My Lore</h3>
+          <p class="panel-content">
+            From a young age, I was fascinated by how things worked. Whether it was 
+            taking apart old gadgets to understand their inner workings or coming up with 
+            creative ways to solve problems using LEGOs, I was constantly drawn to the 
+            world of technology and hardware.
+          </p>
+        </div>
+  
+        <!-- The Future Panel -->
+        <div class="about-us-col interactive-panel">
+          <div class="panel-icon">
+            <i class="fa fa-rocket"></i> 
+          </div>
+          <h3>The Future</h3>
+          <p class="panel-content">
+            I plan to focus on developing expertise in firmware design, gaining hands-on 
+            experience, and exploring entrepreneurship. My goal is to merge technical skills 
+            with creativity to bring impactful ideas to life.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+  <section id="education-skills">
+    <div class="education-container">
+      <!-- Education -->
+      <div class="education-row">
+        <img src="assets/images/waterloo.jpg" class="edu-logo" alt="University of Waterloo Logo">
+        <div class="edu-details">
+          <h3>University of Waterloo</h3>
+          <p>Bachelor's Degree of Applied Science (BASc) in Computer Engineering</p>
+          <span class="edu-duration">2024 - 2029</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Skills -->
+    <div class="skills-container">
+      <h3>Skills</h3>
+      <div class="skills-tags">
+        <span class="skill">React</span>
+        <span class="skill">Next.js</span>
+        <span class="skill">TailwindCSS</span>
+        <span class="skill">Python</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">MongoDB</span>
+        <span class="skill">Express</span>
+        <span class="skill">C++</span>
+        <span class="skill">numpy</span>
+        <span class="skill">Linux</span>
+        <span class="skill">Javascript</span>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+  <section id="resume">
+    <div class="resume-wrapper reveal">
+      <h2>My Resume</h2>
+      <div class="resume-content">
+       
+        <iframe 
+          src="assets/resume.pdf" 
+          width="100%" 
+          height="600px" 
+          title="My Resume" 
+          style="border: none;">
+        </iframe>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <div class="contact-container reveal">
+      <h2>Contact Me</h2>
+      <p>Have a question or just want to say hi? Feel free to reach out!</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="_replyto" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+
+
+
+  
+  <section id="footer-section">
+    <div class="footer-row">
+      <p>Krish 2025 </p>
+      <div class="footer-nav-links">
+        <ul>
+          <li><a href="#hero-section">Home</a></li>
+          <li><a href="#about-us">About</a></li>
+          <li><a href="#our-products">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+
+  
