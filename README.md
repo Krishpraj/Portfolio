@@ -1,5 +1,5 @@
 Krish Prajapati's Portfolio
-Welcome to my portfolio! I'm Krish Prajapati, a passionate and driven electrical and computer engineering student with a focus on software development, systems design, and creative technological solutions. I am excited about creating impactful solutions that blend technology and creativity.
+Welcome to my portfolio! I'm Krish Prajapati, a passionate and driven electrical and computer engineering student with a focus on software development, systems design, and creative technological solutions. I am excited about creating impactful solutions that blend technology and creativity. This website was a good way to develop my skills in HTML, CSS, and Javascript. 
 
 About Me
 I have a diverse background in various fields, including:
